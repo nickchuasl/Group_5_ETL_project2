@@ -1,23 +1,25 @@
 CREATE TABLE quality_of_life_index (
-	id INT PRIMARY KEY,
+	country_id INT PRIMARY KEY,
 	country_name TEXT,
-	quality_of_life_index FLOAT
+	quality_of_life_index FLOAT,
+	rank FLOAT
 );
 
 
 
 CREATE TABLE corruption_perp (
-	id INT PRIMARY KEY,
+	cpi_id INT PRIMARY KEY,
 	country_name TEXT,
 	cpi_2020 INT,
-	cpi_rank_2020 INT
+	cpi_2020_rank FLOAT
 );
 
 
 CREATE TABLE happiness (
-	id INT PRIMARY KEY,
+	happiness_id INT PRIMARY KEY,
 	country_name TEXT,
 	ladder_score FLOAT,
+	ladder_score_rank FLOAT,
 	gdp_per_capita FLOAT,
 	social_support FLOAT,
 	healthy_life_expectancy FLOAT,
@@ -25,3 +27,8 @@ CREATE TABLE happiness (
 	generosity FLOAT,
 	perceptions_of_corruption FLOAT
 );
+
+SELECT * FROM quality_of_life_index;
+SELECT * FROM corruption_perp;
+SELECT * FROM happiness;
+
