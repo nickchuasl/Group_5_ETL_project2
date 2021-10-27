@@ -1,0 +1,27 @@
+CREATE TABLE quality_of_life_index (
+	id INT PRIMARY KEY,
+	country_name TEXT,
+	quality_of_life_index FLOAT
+);
+
+
+
+CREATE TABLE corruption_perp (
+	id INT PRIMARY KEY,
+	country_name TEXT,
+	cpi_2020 INT,
+	cpi_rank_2020 INT
+);
+
+
+CREATE TABLE happiness (
+	id INT PRIMARY KEY,
+	country_name TEXT,
+	ladder_score FLOAT,
+	gdp_per_capita FLOAT,
+	social_support FLOAT,
+	healthy_life_expectancy FLOAT,
+	freedom_to_make_life_choices FLOAT,
+	generosity FLOAT,
+	perceptions_of_corruption FLOAT
+);
