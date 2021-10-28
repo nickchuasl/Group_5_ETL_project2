@@ -1,7 +1,7 @@
 # Group_5_ETL_project2
 
 ## Studying Country's quality of life vs (perception of corruption, GDP per capita, Healthy life expectancy, etc.)
-t
+
 ### This project was completed by Hayley Lim, Nicholas Chua, Sanuli Lohara and Tamer Abdelaal.
 
 ### Information about the project files
